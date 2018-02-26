@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Halo Sate Codot</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type= "text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style>
+    body {
+        margin: 0;
+        background: #000; 
+      }
+      video { 
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
+          z-index: -100;
+          transform: translateX(-50%) translateY(-50%);
+       background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+        background-size: cover;
+        transition: 1s opacity;
+      }
+      .stopfade { 
+         opacity: .5;
+      }
+      
+      #polina { 
+        font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+        font-weight:100; 
+        background: rgba(0,0,0,0.3);
+        color: white;
+        padding: 2rem;
+        width: 45%;
+        height: 1000px;
+        margin:right;
+        float: left;
+        font-size: 1.2rem;
+        transform: skew(-10deg)
+      }
+      #polina2 { 
+        width: 10%;
+        height: 1000px;
+        float: right;
+        margin-right: 10px;
+      }
+      h1 {
+        font-size: 80px;
+        text-transform: uppercase;
+        margin-top: 0;
+        letter-spacing: .3rem;
+      }
+      p {
+        font-size: 50px;
+        margin-top: 0;
+        letter-spacing: .3rem;
+      }
+      
+      a {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        background:rgba(0,0,0,0.5);
+        padding: .5rem;
+        transition: .6s background; 
+      }
+      a:hover{
+        background:rgba(0,0,0,0.9);
+      }
+      @media screen and (max-width: 500px) { 
+        div{width:70%;} 
+      }
+      @media screen and (max-device-width: 800px) {
+        html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+        #bgvid { display: none; }
+      }
+    </style>
+</head>
+<body>
+        <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+            <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+          <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+          <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+          </video>
+          <div id="polina">
+          <h1>HALO SATE CODOT</h1>
+          <p>Dilarang Membuang Softex atau Benda Ajaib Lainnya ke Dalam Closet</p>
+          <p>Dilarang Membuang Softex atau Benda Ajaib Lainnya ke Dalam Closet</p>
+          <p>Dilarang Membuang Softex atau Benda Ajaib Lainnya ke Dalam Closet</p>
+          
+          </div>
+          <div id="polina2">
+                <a href="http://twitter.com"><img src="https://image.flaticon.com/icons/svg/166/166561.svg" alt="" width="200px" height="200px"></a><br>
+                <a href="http://linkedin.com"><img src="https://image.flaticon.com/icons/svg/166/166558.svg" alt="" width="200px" height="200px"></a><br>
+                <a href="http://facebook.com"><img src="https://image.flaticon.com/icons/svg/166/166525.svg" alt="" width="200px" height="200px"></a><br>
+                <a href="http://instagram.com"><img src="https://image.flaticon.com/icons/svg/166/166561.svg" alt="" width="200px" height="200px"></a><br>
+                <a href="http://snapchat.com"><img src="https://image.flaticon.com/icons/svg/166/166560.svg" alt="" width="200px" height="200px"> </a>  
+            </div>
+</body>
+</html>
